@@ -10,6 +10,8 @@ requires-python = ">=3.12"
 dependencies = [
     "atdata>=0.1.1a3",
     "convokit>=3.5.0",
+    "pandas>=2.3.3",
+    "tqdm>=4.67.1",
 ]
 
 [project.scripts]
@@ -24,6 +26,7 @@ addopts = "--cov=atdata --cov-report=html"
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
 ]
