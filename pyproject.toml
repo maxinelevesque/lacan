@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "atdata>=0.1.1a3",
+    "convokit>=3.5.0",
 ]
 
 [project.scripts]
