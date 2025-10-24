@@ -1,3 +1,13 @@
+## Custom
+
+# Mac garbage
+**/.DS_Store
+
+# Don't commit lockfiles
+**/uv.lock
+
+## Defaults
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

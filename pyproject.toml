@@ -1,0 +1,28 @@
+[project]
+name = "lacan"
+version = "0.1.0"
+description = "The text as patient"
+readme = "README.md"
+authors = [
+    { name = "Maxine Levesque", email = "170461181+maxinelevesque@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "atdata>=0.1.1a3",
+]
+
+[project.scripts]
+lacan = "lacan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = "--cov=atdata --cov-report=html"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+]
